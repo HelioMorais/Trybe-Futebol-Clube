@@ -21,7 +21,9 @@ export default class LoginService {
       return { status: 'UNAUTHORIZED', data: { message: 'Invalid email or password' } };
     }
     const { password: _password, ...payload } = userData;
+    // const { dataValues } = userData;
     const myToken = sign(payload);
+    // const myToken = sign({ email: payload.email, username: payload.username });
 
     return { status: 'SUCCESSFUL', data: myToken };
   }

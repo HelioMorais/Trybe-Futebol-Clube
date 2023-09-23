@@ -6,6 +6,6 @@ const matchController = new MatchController();
 
 const matchRouter = Router();
 
-matchRouter.get('/', (req: Request, res: Response) => matchController.findAllTeams(req, res));
+matchRouter.get('/', (req: Request, res: Response) => matchController.findMatches(req, res));
 
 export default matchRouter;

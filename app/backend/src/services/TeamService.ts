@@ -1,7 +1,7 @@
 // import { NewEntity } from '../Interfaces';
 // import SeqTeamModel from '../database/models/SeqTeamModel';
 import TeamModel from '../database/models/TeamModel';
-import { ITeams } from '../Interfaces/ITeams';
+import { ITeams } from '../Interfaces/ITeam';
 import { ITeamsModel } from '../Interfaces/ITeamsModel';
 import { ServiceResponse } from '../Interfaces/ServiceResponse';
 // import { ServiceMessage, ServiceResponse } from '../Interfaces/ServiceResponse';

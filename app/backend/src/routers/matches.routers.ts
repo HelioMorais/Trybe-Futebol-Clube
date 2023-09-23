@@ -1,6 +1,5 @@
 import { Request, Router, Response } from 'express';
 import MatchController from '../controllers/MatchController';
-// import Validations from '../middlewares/Validations';
 import validateToken from '../middlewares/validateToken';
 
 const matchController = new MatchController();

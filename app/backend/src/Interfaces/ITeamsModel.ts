@@ -1,6 +1,6 @@
-import { ITeams } from './ITeams';
+import { ITeam } from './ITeam';
 
 export interface ITeamsModel {
-  findAll(): Promise<ITeams[]>,
-  findByOne(id: ITeams['id']): Promise<ITeams | null>
+  findAll(): Promise<ITeam[]>,
+  findByOne(id: ITeam['id']): Promise<ITeam | null>
 }

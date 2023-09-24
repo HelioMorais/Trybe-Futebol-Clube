@@ -8,7 +8,7 @@ import * as bcrypt from 'bcryptjs';
 import * as jwt from 'jsonwebtoken';
 import SequelizeUser from '../database/models/SequelizeUser';
 import { user, userLogin, validToken } from './User.mocks';
-import ValidationFieldsLogin from '../database/middlewares/ValidationFieldsLogin';
+
 
 import { app } from '../app';
 import Example from '../database/models/ExampleModel';

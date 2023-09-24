@@ -9,7 +9,12 @@ const router = Router();
 router.post(
   '/',
   ValidationFieldsLogin.validateFields,
+  ValidationFieldsLogin.validateEmailPassword,
   (req: Request, res: Response) => userController.loginUser(req, res),
+);
+router.get(
+  '/role',
+  (req: Request, res: Response) => userController.getRoleByToken(req, res),
 );
 
 export default router;
